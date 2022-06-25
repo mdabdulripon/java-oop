@@ -4,10 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
         // Using default constructor
-        Student riyan = new Student(1, 98, 92, 91);
-        int total = riyan.sumGrade();
-        double average = riyan.averageGrade(total);
-        System.out.println("Total " + total);
-        System.out.println("Average " + average);
+        Person riyan = new Person();
+        // 1st method will invoke
+        riyan.displayAge();
+        // 2nd method will invoke
+        riyan.displayAge(2);
+        // 3rd method will invoke
+        riyan.displayAge(1.9);
     }
 }
