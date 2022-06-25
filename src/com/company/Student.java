@@ -10,6 +10,7 @@ public class Student {
     // Constructor
     Student() {}
 
+    // parameterized constructor
     Student(int id, int phy, int chem, int math) {
         this.id = id;
         this.phy = phy;
