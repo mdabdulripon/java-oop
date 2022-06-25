@@ -3,11 +3,14 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // Using default constructor
-        Student riyan = new Student(1, 98, 92, 91);
-        int total = riyan.sumGrade();
-        double average = riyan.averageGrade(total);
-        System.out.println("Total " + total);
-        System.out.println("Average " + average);
+
+        // To Access the static method, you can directly use the class name followed by the method name.
+        Person.displayStaticName("Ripon");
+
+        // to Access the Regular method need create an object of the class
+        Person p = new Person();
+        p.displayName("Riyan");
+
+
     }
 }

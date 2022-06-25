@@ -1,12 +1,27 @@
 package com.company;
 
 public class Person {
-    // Method Overloading
-    void displayAge() {
-        System.out.println("My Age 20");
+
+    /**
+     * Regular Method
+     * To Access regular method you need to create an instances
+     * */
+
+    public void displayName(String name) {
+        System.out.println("Your name is " +  name);
     }
 
-    void displayAge(int age) {
-        System.out.println("My Age " + age);
+    /**
+     * * Static Method
+     *
+     * You do not need to create an instances of this class
+     * You can directly access the is methods.
+     * */
+
+    public static void displayStaticName(String name) {
+        System.out.println("Your name is " + name);
     }
+
+
+
 }
